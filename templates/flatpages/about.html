@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ flatpage.title }}</title>
-</head>
-<body>
-<h1>{{ flatpage.content }}</h1>
-<h2>123</h2>
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h1><span style="background-color: #000000;"><strong>
+    <span style="color: #008000;"><span style="color: #0000ff;">
+    A</span>
+    B<span style="color: #00ccff;">
+    O</span></span><span style="color: #ff0000;">
+    U</span><span style="color: #00ffff;">
+    T</span>&nbsp;<span style="color: #808000;">
+    U</span><span style="color: #ff00ff;">
+    S</span></strong></span></h1>
+{{ flatpage.content }}
+{% endblock content %}
